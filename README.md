@@ -58,7 +58,7 @@ conda activate cameractrl
 ## Inferences
 
 ### Prepare Models
-- Download Stable Diffusion V1.5 (SD1.5) from [HuggingFace](https://huggingface.co/runwayml/stable-diffusion-v1-5/tree/main).
+- Download Stable Diffusion V1.5 (SD1.5) from [HuggingFace](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/blob/main/v1-5-pruned.ckpt).
 - Download the checkpoints of AnimateDiffV3 (ADV3) adaptor and motion module from [AnimateDiff](https://github.com/guoyww/AnimateDiff).
 - Download the pretrained camera control model from [HuggingFace](https://huggingface.co/hehao13/CameraCtrl/blob/main/CameraCtrl.ckpt).
 - Run `tools/merge_lora2unet.py` to merge the ADV3 adaptor weights into SD1.5 unet and save results to new subfolder (like, `unet_webvidlora_v3`) under the SD1.5 folder.
